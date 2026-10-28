@@ -1,0 +1,31 @@
+let aleatorio = 0
+
+loops.everyInterval(5000, function () {
+    aleatorio = randint(0, 2)
+
+    if (aleatorio == 0) {
+        basic.showLeds(`
+            . . . . #
+            . . . # .
+            . . # . .
+            . # . . .
+            # . . . .
+        `)
+    } else if (aleatorio == 1) {
+        basic.showLeds(`
+            # . . . #
+            . # . # .
+            . . # . .
+            . # . # .
+            # . . . #
+        `)
+    } else {
+        basic.showLeds(`
+            # # # # #
+            # . . . #
+            # . . . #
+            # . . . #
+            # # # # #
+        `)
+    }
+})
